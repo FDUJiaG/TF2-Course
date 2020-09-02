@@ -4,8 +4,8 @@
 * [Chapter 01: Modeling Procedure of TensorFlow](./chapter01/README.md)
     * [01-01 Modeling Procedure for Structured Data](./chapter01/c01-01-structured-data-modeling-process.md)
     * [01-02 Modeling Procedure for Images](./chapter01/c01-02-image-data-modeling-process.md)
-    * [01-03 Modeling Procedure for Texts](.chapter01/c01-03-text-data-modeling-process.md)
-    * [01-04 Modeling Procedure for Temporal Sequences](.chapter01/c01-04-time-series-data-modeling-process.md)
+    * [01-03 Modeling Procedure for Texts](./chapter01/c01-03-text-data-modeling-process.md)
+    * [01-04 Modeling Procedure for Temporal Sequences](./chapter01/c01-04-time-series-data-modeling-process.md)
 
 * [Chapter 02: Key Concepts of TensorFlow](./chapter02/README.md)
     * [02-01 Data Structure of Tensor](./chapter02/c02-01.md)
