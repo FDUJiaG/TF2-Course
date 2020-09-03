@@ -131,3 +131,4 @@ dmypy.json
 # Other
 data.bak
 *.ipynb
+autograph/
