@@ -8,7 +8,7 @@
     * [01-04 Modeling Procedure for Temporal Sequences](./chapter01/c01-04-time-series-data-modeling-process.md)
 
 * [Chapter 02: Key Concepts of TensorFlow](./chapter02/README.md)
-    * [02-01 Data Structure of Tensor](./chapter02/c02-01.md)
+    * [02-01 Data Structure of Tensor](./chapter02/c02-01-data-structure-of-tensor.md)
     * [02-02 Three Types of Graph](./chapter02/c02-02.md)
     * [02-03 Automatic Differentiate](./chapter02/c02-03.md)
 
