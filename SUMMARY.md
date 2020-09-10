@@ -10,7 +10,7 @@
 * [Chapter 02: Key Concepts of TensorFlow](./chapter02/README.md)
     * [02-01 Data Structure of Tensor](./chapter02/c02-01-data-structure-of-tensor.md)
     * [02-02 Three Types of Graph](./chapter02/c02-02-three-types-of-graph.md)
-    * [02-03 Automatic Differentiate](./chapter02/c02-03.md)
+    * [02-03 Automatic Differentiate](./chapter02/c02-03-automatic-differentiate.md)
 
 * [Chapter 03: Hierarchy of TensorFlow](./chapter03/README.md)
     * [03-01 Low-level API: Demonstration](./chapter03/c03-01.md)
