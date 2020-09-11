@@ -18,7 +18,7 @@
     * [03-03 Rules of Using the AutoGraph](./chapter03/c03-03-rules-of-using-the-autograph.md)
     * [03-04 Mechanisms of the AutoGraph](./chapter03/c03-04-mechanisms-of-the-autograph.md)
     * [03-05 AutoGraph and tf.Module](./chapter03/c03-05-autograph-and-tf.Module.md)
-    * [03-05 Low-level API: Demonstration](./chapter03/c03-06.md)
+    * [03-06 Low-level API: Demonstration](./chapter03/c03-06.md)
 
 * [Chapter 04: Mid-level API in TensorFlow](./chapter04/README.md)
     * [04-01 Dataset](./chapter04/c04-01.md)
