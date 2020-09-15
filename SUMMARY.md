@@ -22,7 +22,7 @@
 
 * [Chapter 04: Mid-level API in TensorFlow](./chapter04/README.md)
     * [04-01 Dataset](./chapter04/c04-01-dataset.md)
-    * [04-02 feature_column](./chapter04/c04-02.md)
+    * [04-02 Feature Column](./chapter04/c04-02-feature-column.md)
     * [04-03 activation](./chapter04/c04-03.md)
     * [04-04 layers](./chapter04/c04-04.md)
     * [04-05 losses](./chapter04/c04-05.md)
