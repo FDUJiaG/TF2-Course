@@ -213,9 +213,7 @@ for i, (img, label) in enumerate(ds6.map(load_image).take(2)):
     plt.savefig("./figs/4-1-preview-cifar-" + str(i) + ".svg")
 ```
 
-| Preview Cifar 1 | Preview Cifar 2 |
-| :---: | :---: |
-| ![Preview Cifar 1](./figs/4-1-preview-cifar-0.svg) | ![Preview Cifar 2](./figs/4-1-preview-cifar-1.svg) |
+![Preview Cifar from File Path](./figs/4-1-preview-cifar-from-file-path.jpg)
 
 ### Building from TFRecords File
 
