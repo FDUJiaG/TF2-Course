@@ -25,7 +25,7 @@
     * [04-02 Feature Column](./chapter04/c04-02-feature-column.md)
     * [04-03 Activation Function](./chapter04/c04-03-activation-function.md)
     * [04-04 Layers](./chapter04/c04-04-layers.md)
-    * [04-05 losses](./chapter04/c04-05.md)
+    * [04-05 Loss Function](./chapter04/c04-05-losses.md)
     * [04-06 metrics](./chapter04/c04-06.md)
     * [04-07 optimizers](./chapter04/c04-07.md)
     * [04-08 callbacks](./chapter04/c04-08.md)
