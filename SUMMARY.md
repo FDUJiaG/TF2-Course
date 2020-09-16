@@ -32,7 +32,7 @@
     * [04-09 Mid-level API: Demonstration](./chapter04/c04-09.md)
 
 * [Chapter 05: High-level API in TensorFlow](./chapter05/README.md)
-    * [05-01 Three Ways of Modeling](./chapter05/c05-01.md)
+    * [05-01 Three Ways of Modeling](./chapter05/c05-01-three-ways-of-modeling.md)
     * [05-02 Three Ways of Training](./chapter05/c05-02.md)
     * [05-03 Model Training Using Single GPU](./chapter05/c05-03.md)
     * [05-04 Model Training Using Multiple GPUs](./chapter05/c05-04.md)

@@ -133,3 +133,5 @@ data.bak
 *.ipynb
 autograph/
 sudoku-parser
+*/data/keras_model/
+
