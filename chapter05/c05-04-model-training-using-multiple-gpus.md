@@ -24,6 +24,12 @@ print(tf.__version__)
 from tensorflow.keras import * 
 ```
 
+**output**
+
+```console
+2.3.0
+```
+
 此处在 Colab 上使用 1 个 GPU 模拟出 2 个逻辑 GPU 进行多 GPU 训练，如果实际有多个物理的 GPU 则更为方便，还可以把 VGPU 的设置删减掉
 
 ```python
@@ -69,7 +75,7 @@ CAT_NUM = y_train.max() + 1
 ds_train = tf.data.Dataset.from_tensor_slices((x_train, y_train)) \
           .shuffle(buffer_size=1000).batch(BATCH_SIZE) \
           .prefetch(tf.data.experimental.AUTOTUNE).cache()
-   
+
 ds_test = tf.data.Dataset.from_tensor_slices((x_test, y_test)) \
           .shuffle(buffer_size=1000).batch(BATCH_SIZE) \
           .prefetch(tf.data.experimental.AUTOTUNE).cache()
@@ -80,7 +86,7 @@ ds_test = tf.data.Dataset.from_tensor_slices((x_test, y_test)) \
 ```python
 tf.keras.backend.clear_session()
 def create_model():
-    
+
     model = models.Sequential()
 
     model.add(layers.Embedding(MAX_WORDS, 7, input_length=MAX_LEN))
@@ -109,13 +115,13 @@ tf.keras.backend.clear_session()
 ### Model Training
 
 ```python
-# 增加以下两行代码
+# 增加以下 2 行代码
 strategy = tf.distribute.MirroredStrategy()  
 with strategy.scope(): 
     model = create_model()
     model.summary()
     model = compile_model(model)
-    
+
 history = model.fit(ds_train, validation_data=ds_test, epochs=10)  
 ```
 

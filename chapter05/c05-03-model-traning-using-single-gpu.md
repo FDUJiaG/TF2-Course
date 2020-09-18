@@ -89,6 +89,12 @@ import tensorflow as tf
 print(tf.__version__)
 ```
 
+**output**
+
+```console
+2.3.0
+```
+
 定义时间分割线函数
 
 ```python
@@ -102,7 +108,7 @@ def printbar():
     hour = tf.cast(today_ts // 3600 + 8, tf.int32) % tf.constant(24)
     minite = tf.cast((today_ts%3600) // 60, tf.int32)
     second = tf.cast(tf.floor(today_ts % 60), tf.int32)
-    
+
     def timeformat(m):
         if tf.strings.length(tf.strings.format("{}", m)) == 1:
             return(tf.strings.format("0{}", m))
@@ -185,7 +191,7 @@ CAT_NUM = y_train.max() + 1
 ds_train = tf.data.Dataset.from_tensor_slices((x_train, y_train)) \
           .shuffle(buffer_size=1000).batch(BATCH_SIZE) \
           .prefetch(tf.data.experimental.AUTOTUNE).cache()
-   
+
 ds_test = tf.data.Dataset.from_tensor_slices((x_test, y_test)) \
           .shuffle(buffer_size=1000).batch(BATCH_SIZE) \
           .prefetch(tf.data.experimental.AUTOTUNE).cache()
@@ -197,7 +203,7 @@ ds_test = tf.data.Dataset.from_tensor_slices((x_test, y_test)) \
 tf.keras.backend.clear_session()
 
 def create_model():
-    
+
     model = models.Sequential()
 
     model.add(layers.Embedding(MAX_WORDS, 7, input_length=MAX_LEN))
