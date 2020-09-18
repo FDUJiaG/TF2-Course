@@ -36,7 +36,7 @@
     * [05-02 Three Ways of Training](./chapter05/c05-02-three-ways-of-training.md)
     * [05-03 Model Training Using Single GPU](./chapter05/c05-03-model-traning-using-single-gpu.md)
     * [05-04 Model Training Using Multiple GPUs](./chapter05/c05-04-model-training-using-multiple-gpus.md)
-    * [05-05 Model Training Using TPU](./chapter05/c05-05.md)
+    * [05-05 Model Training Using TPU](./chapter05/c05-05-model-training-using-tpu.md)
     * [05-06 Model Deploying Using tensorflow-serving](./chapter05/c05-06.md)
     * [05-07 Call Tensorflow Model Using spark-scala](./chapter05/c05-07.md)
     * [05-08 High-level API: Demonstration](./chapter05/c05-08.md)
