@@ -44,9 +44,15 @@ if gpus:
         print(e)
 ```
 
+**output**
+
+```console
+1 Physical GPU, 2 Logical GPUs
+```
+
 ## Colab Demo
 
-以下代码可以通过 Colab 链接测试效果 【 [TF2.3 Demo with Multiple GPUs](https://colab.research.google.com/drive/1j2kp_t0S_cofExSN7IyJ4QtMscbVlXU-) 】
+以下代码可以通过 Colab 链接测试效果 【 [TF2.3 Demo with Multiple GPUs](https://colab.research.google.com/drive/1tUffYwXf-KGXozjljUygzTTEgmCLtKgN?usp=sharing) 】
 
 ### Data Preparation
 
@@ -140,12 +146,10 @@ Total params: 332,856
 Trainable params: 332,856
 Non-trainable params: 0
 _________________________________________________________________
-INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
-Train for 281 steps, validate for 71 steps
 Epoch 1/10
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/data/ops/multi_device_iterator_ops.py:601: get_next_as_optional (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Iterator.get_next_as_optional()` instead.
 INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:GPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:GPU:0', '/job:localhost/replica:0/task:0/device:GPU:1').
 INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:GPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:GPU:0', '/job:localhost/replica:0/task:0/device:GPU:1').
 INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:GPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:GPU:0', '/job:localhost/replica:0/task:0/device:GPU:1').
@@ -162,25 +166,27 @@ INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broa
 INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:GPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:GPU:0', '/job:localhost/replica:0/task:0/device:GPU:1').
 INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:GPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:GPU:0', '/job:localhost/replica:0/task:0/device:GPU:1').
 INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:GPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:GPU:0', '/job:localhost/replica:0/task:0/device:GPU:1').
-281/281 [==============================] - 15s 53ms/step - loss: 2.0270 - sparse_categorical_accuracy: 0.4653 - sparse_top_k_categorical_accuracy: 0.7481 - val_loss: 1.7517 - val_sparse_categorical_accuracy: 0.5481 - val_sparse_top_k_categorical_accuracy: 0.7578
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+281/281 [==============================] - 7s 26ms/step - loss: 3.4208 - sparse_categorical_accuracy: 0.4520 - sparse_top_k_categorical_accuracy: 0.7200 - val_loss: 3.3410 - val_sparse_categorical_accuracy: 0.5263 - val_sparse_top_k_categorical_accuracy: 0.7182
 Epoch 2/10
-281/281 [==============================] - 4s 14ms/step - loss: 1.5206 - sparse_categorical_accuracy: 0.6045 - sparse_top_k_categorical_accuracy: 0.7938 - val_loss: 1.5715 - val_sparse_categorical_accuracy: 0.5993 - val_sparse_top_k_categorical_accuracy: 0.7983
+281/281 [==============================] - 6s 20ms/step - loss: 3.3315 - sparse_categorical_accuracy: 0.5343 - sparse_top_k_categorical_accuracy: 0.7270 - val_loss: 3.3304 - val_sparse_categorical_accuracy: 0.5343 - val_sparse_top_k_categorical_accuracy: 0.7208
 Epoch 3/10
-281/281 [==============================] - 4s 14ms/step - loss: 1.2178 - sparse_categorical_accuracy: 0.6843 - sparse_top_k_categorical_accuracy: 0.8547 - val_loss: 1.5232 - val_sparse_categorical_accuracy: 0.6327 - val_sparse_top_k_categorical_accuracy: 0.8112
+281/281 [==============================] - 6s 21ms/step - loss: 3.3171 - sparse_categorical_accuracy: 0.5488 - sparse_top_k_categorical_accuracy: 0.7256 - val_loss: 3.3268 - val_sparse_categorical_accuracy: 0.5378 - val_sparse_top_k_categorical_accuracy: 0.7204
 Epoch 4/10
-281/281 [==============================] - 4s 13ms/step - loss: 0.9127 - sparse_categorical_accuracy: 0.7648 - sparse_top_k_categorical_accuracy: 0.9113 - val_loss: 1.6527 - val_sparse_categorical_accuracy: 0.6296 - val_sparse_top_k_categorical_accuracy: 0.8201
+281/281 [==============================] - 6s 21ms/step - loss: 3.3116 - sparse_categorical_accuracy: 0.5538 - sparse_top_k_categorical_accuracy: 0.7241 - val_loss: 3.3268 - val_sparse_categorical_accuracy: 0.5378 - val_sparse_top_k_categorical_accuracy: 0.7150
 Epoch 5/10
-281/281 [==============================] - 4s 14ms/step - loss: 0.6606 - sparse_categorical_accuracy: 0.8321 - sparse_top_k_categorical_accuracy: 0.9525 - val_loss: 1.8791 - val_sparse_categorical_accuracy: 0.6158 - val_sparse_top_k_categorical_accuracy: 0.8219
+281/281 [==============================] - 6s 21ms/step - loss: 3.2967 - sparse_categorical_accuracy: 0.5714 - sparse_top_k_categorical_accuracy: 0.7251 - val_loss: 3.3268 - val_sparse_categorical_accuracy: 0.5405 - val_sparse_top_k_categorical_accuracy: 0.7155
 Epoch 6/10
-281/281 [==============================] - 4s 14ms/step - loss: 0.4919 - sparse_categorical_accuracy: 0.8799 - sparse_top_k_categorical_accuracy: 0.9725 - val_loss: 2.1282 - val_sparse_categorical_accuracy: 0.6037 - val_sparse_top_k_categorical_accuracy: 0.8112
+281/281 [==============================] - 6s 21ms/step - loss: 3.2738 - sparse_categorical_accuracy: 0.5942 - sparse_top_k_categorical_accuracy: 0.7275 - val_loss: 3.3084 - val_sparse_categorical_accuracy: 0.5561 - val_sparse_top_k_categorical_accuracy: 0.7195
 Epoch 7/10
-281/281 [==============================] - 4s 14ms/step - loss: 0.3947 - sparse_categorical_accuracy: 0.9051 - sparse_top_k_categorical_accuracy: 0.9814 - val_loss: 2.3033 - val_sparse_categorical_accuracy: 0.6046 - val_sparse_top_k_categorical_accuracy: 0.8094
+281/281 [==============================] - 6s 20ms/step - loss: 3.2635 - sparse_categorical_accuracy: 0.6034 - sparse_top_k_categorical_accuracy: 0.7269 - val_loss: 3.3122 - val_sparse_categorical_accuracy: 0.5521 - val_sparse_top_k_categorical_accuracy: 0.7217
 Epoch 8/10
-281/281 [==============================] - 4s 14ms/step - loss: 0.3335 - sparse_categorical_accuracy: 0.9207 - sparse_top_k_categorical_accuracy: 0.9863 - val_loss: 2.4255 - val_sparse_categorical_accuracy: 0.5993 - val_sparse_top_k_categorical_accuracy: 0.8099
+281/281 [==============================] - 6s 20ms/step - loss: 3.2582 - sparse_categorical_accuracy: 0.6077 - sparse_top_k_categorical_accuracy: 0.7279 - val_loss: 3.3010 - val_sparse_categorical_accuracy: 0.5663 - val_sparse_top_k_categorical_accuracy: 0.7177
 Epoch 9/10
-281/281 [==============================] - 4s 14ms/step - loss: 0.2919 - sparse_categorical_accuracy: 0.9304 - sparse_top_k_categorical_accuracy: 0.9911 - val_loss: 2.5571 - val_sparse_categorical_accuracy: 0.6020 - val_sparse_top_k_categorical_accuracy: 0.8126
+281/281 [==============================] - 6s 20ms/step - loss: 3.2554 - sparse_categorical_accuracy: 0.6098 - sparse_top_k_categorical_accuracy: 0.7270 - val_loss: 3.3011 - val_sparse_categorical_accuracy: 0.5659 - val_sparse_top_k_categorical_accuracy: 0.7208
 Epoch 10/10
-281/281 [==============================] - 4s 14ms/step - loss: 0.2617 - sparse_categorical_accuracy: 0.9342 - sparse_top_k_categorical_accuracy: 0.9937 - val_loss: 2.6700 - val_sparse_categorical_accuracy: 0.6077 - val_sparse_top_k_categorical_accuracy: 0.8148
-CPU times: user 1min 2s, sys: 8.59 s, total: 1min 10s
-Wall time: 58.5 s
+281/281 [==============================] - 6s 20ms/step - loss: 3.2545 - sparse_categorical_accuracy: 0.6104 - sparse_top_k_categorical_accuracy: 0.7266 - val_loss: 3.3071 - val_sparse_categorical_accuracy: 0.5583 - val_sparse_top_k_categorical_accuracy: 0.7208
 ```
