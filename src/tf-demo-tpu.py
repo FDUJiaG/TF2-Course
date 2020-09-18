@@ -22,8 +22,13 @@ try:
     print('Running on TPU ', resolver.master())
 except ValueError:
     resolver = None
+except KeyError:
+    resolver = None
 
-resolver.__dict__
+if resolver:
+    tf.print(resolver.__dict__)
+else:
+    tf.print("[INFO] No TPU Drive!")
 
 MAX_LEN = 300
 BATCH_SIZE = 32

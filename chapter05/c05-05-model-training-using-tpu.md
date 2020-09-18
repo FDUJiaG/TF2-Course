@@ -35,6 +35,8 @@ try:
     print('Running on TPU ', resolver.master())
 except ValueError:
     resolver = None
+except KeyError:
+    resolver = None
 ```
 
 **output**
@@ -46,7 +48,10 @@ Running on TPU  grpc://10.1.185.170:8470
 也可以查看 TPU 的对象参数
 
 ```python
-resolver.__dict__
+if resolver:
+    tf.print(resolver.__dict__)
+else:
+    tf.print("[INFO] No TPU Drive!")
 ```
 
 **output**
