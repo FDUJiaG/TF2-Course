@@ -135,4 +135,5 @@ autograph/
 sudoku-parser
 */data/keras_model/
 *.pptx
+*.pdf
 
