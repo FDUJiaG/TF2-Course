@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 # Other
-data.bak
+*.bak
 *.ipynb
 autograph/
 sudoku-parser
