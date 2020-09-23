@@ -38,5 +38,5 @@
     * [05-04 Model Training Using Multiple GPUs](./chapter05/c05-04-model-training-using-multiple-gpus.md)
     * [05-05 Model Training Using TPU](./chapter05/c05-05-model-training-using-tpu.md)
     * [05-06 Model Deploying Using tensorflow-serving](./chapter05/c05-06-model-deploying-using-tensorflow-serving.md)
-    * [05-07 Call Tensorflow Model Using spark-scala](./chapter05/c05-07.md)
-    * [05-08 High-level API: Demonstration](./chapter05/c05-08.md)
+    * [05-07 Call Tensorflow Model Using spark-scala](./chapter05/c05-07-call-tensorflow-model-using-spark-scala.md)
+    * [05-08 High-level API: Demonstration](./chapter05/c05-08-high-level-api-demonstration.md)
