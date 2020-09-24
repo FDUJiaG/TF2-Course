@@ -29,7 +29,7 @@
     * [04-06 Metrics](./chapter04/c04-06-metrics.md)
     * [04-07 Optimizers](./chapter04/c04-07-optimizers.md)
     * [04-08 Callbacks](./chapter04/c04-08-callbacks.md)
-    * [04-09 Mid-level API: Demonstration](./chapter04/c04-09.md)
+    * [04-09 Mid-level API: Demonstration](./chapter04/c04-09-mid-level-api-demonstration.md)
 
 * [Chapter 05: High-level API in TensorFlow](./chapter05/README.md)
     * [05-01 Three Ways of Modeling](./chapter05/c05-01-three-ways-of-modeling.md)
