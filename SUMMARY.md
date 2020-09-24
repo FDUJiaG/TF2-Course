@@ -27,8 +27,8 @@
     * [04-04 Layers](./chapter04/c04-04-layers.md)
     * [04-05 Loss Function](./chapter04/c04-05-losses.md)
     * [04-06 Metrics](./chapter04/c04-06-metrics.md)
-    * [04-07 optimizers](./chapter04/c04-07-optimizers.md)
-    * [04-08 callbacks](./chapter04/c04-08.md)
+    * [04-07 Optimizers](./chapter04/c04-07-optimizers.md)
+    * [04-08 Callbacks](./chapter04/c04-08-callbacks.md)
     * [04-09 Mid-level API: Demonstration](./chapter04/c04-09.md)
 
 * [Chapter 05: High-level API in TensorFlow](./chapter05/README.md)
